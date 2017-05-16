@@ -1,7 +1,7 @@
 {
   "name": "minimalist-subreddit-wrapper",
-  "version": "1.0.1",
-  "description": "Minimalistic api wrapper for:",
+  "version": "1.0.2",
+  "description": "Minimalistic api wrapper for subreddit posts",
   "main": "index.js",
   "scripts": {
     "start": "babel-node index.js --presets es2015,stage-2",

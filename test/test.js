@@ -10,8 +10,3 @@ describe('Sub reddit wrapper', function() {
         });
     });
 });
-// r.getsubredditPosts().then(response =>{
-//     r.pageNext().then(response =>{
-//         console.log(response.body);
-//     });
-// });

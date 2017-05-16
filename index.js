@@ -36,6 +36,16 @@ class RedditWrapper {
     pagePrevious(){
         return this.getsubredditPosts(`?before=${this.firstReadPostId}`);
     }
+
+    page(isAfter, lastReadPostId, firstReadPostId){
+        this.lastReadPostId = lastReadPostId;
+        this.firstReadPostId = firstReadPostId;
+        if (isAfter) {
+            this.pageNext();
+        } else {
+            this.pagePrevious();
+        }
+    }
 }
 
 module.exports = RedditWrapper;
