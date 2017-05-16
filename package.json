@@ -1,6 +1,6 @@
 {
   "name": "minimalist-subreddit-wrapper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Minimalistic api wrapper for subreddit posts",
   "main": "index.js",
   "scripts": {
