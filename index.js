@@ -29,14 +29,6 @@ class RedditWrapper {
         return this.postsOnCurrentPage;
     }
 
-    pageNext(postId){
-        return this.getsubredditPosts(`?after=${postId}`);
-    }
-
-    pagePrevious(postId){
-        return this.getsubredditPosts(`?before=${postId}`);
-    }
-
     page(isAfter, lastReadPostId, firstReadPostId){
         this.lastReadPostId = lastReadPostId;
         this.firstReadPostId = firstReadPostId;
