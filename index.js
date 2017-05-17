@@ -41,9 +41,9 @@ class RedditWrapper {
         this.lastReadPostId = lastReadPostId;
         this.firstReadPostId = firstReadPostId;
         if (isAfter) {
-            this.pageNext();
+            return this.pageNext();
         } else {
-            this.pagePrevious();
+            return this.pagePrevious();
         }
     }
 }

@@ -7,6 +7,7 @@ Minimalistic api wrapper for:
 ####Usage
 ######Get posts on a subreddit
 ```
+let minimalistSubredditWrapper = require("minimalist-subreddit-wrapper")
 let r = new redditWrapper('<Sub reddit name>');
 r.getsubredditPosts().then(response =>{
      console.log(response.body);
