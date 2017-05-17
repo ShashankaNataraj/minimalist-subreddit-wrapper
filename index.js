@@ -29,21 +29,21 @@ class RedditWrapper {
         return this.postsOnCurrentPage;
     }
 
-    pageNext(){
-        return this.getsubredditPosts(`?after=${this.lastReadPostId}`);
+    pageNext(postId){
+        return this.getsubredditPosts(`?after=${postId}`);
     }
 
-    pagePrevious(){
-        return this.getsubredditPosts(`?before=${this.firstReadPostId}`);
+    pagePrevious(postId){
+        return this.getsubredditPosts(`?before=${postId}`);
     }
 
     page(isAfter, lastReadPostId, firstReadPostId){
         this.lastReadPostId = lastReadPostId;
         this.firstReadPostId = firstReadPostId;
         if (isAfter) {
-            return this.pageNext();
+            return this.getsubredditPosts(`?after=${this.lastReadPostId}`);
         } else {
-            return this.pagePrevious();
+            return this.getsubredditPosts(`?before=${this.firstReadPostId}`);
         }
     }
 }
