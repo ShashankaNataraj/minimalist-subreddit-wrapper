@@ -1,4 +1,6 @@
 # minimalist-subreddit-wrapper
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/ShashankaNataraj/minimalist-subreddit-wrapper.svg)](https://greenkeeper.io/)
 Minimalistic api wrapper for:
 
 1. Getting a list of posts on a subreddit
